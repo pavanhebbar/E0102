@@ -1,0 +1,14 @@
+SKIP SING
+LWIDTH   2.
+LW   1.0 ON   1
+MArk    1 ON   1
+LOC  0 0 1 1
+LAB  1 COL 3 LIN 0 100 JUS Lef
+LAB  1 POS 0.5256 0 " "
+LAB  F
+LAB  T  Square root of chi-squared for each channel
+LAB  X  Energy (keV)
+LAB  Y  (data-model)/error
+R    X1 0.5256 9.9864
+R    Y   NO NO
+LOG  X ON 1

@@ -1,0 +1,16 @@
+statistic chi
+data 1:1 E0102spec_src_grpSNR5.pi
+
+method leven 10 0.01
+abund angr
+xsect vern
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  TBabs*nsa
+       0.111349      0.001          0          0     100000      1e+06
+         6.2652       0.01          5          5          7          7
+            1.4       -0.1        0.5        0.5        2.5        2.5
+             12       -0.1          5          5         20         20
+          1e+12     -1e+09          0          0      5e+13      5e+13
+    2.60146e-10      -0.01          0          0      1e+20      1e+24

@@ -1,0 +1,32 @@
+statistic chi
+data 1:1 E0102spec_src_newgrp.pi
+backgrnd 1 none
+ignore 1:1,28
+
+method leven 10 0.01
+cd /Users/pavanrh/Documents/UofA_projects/E0102/spec_analysis
+abund file smc_abund.txt
+xsect vern
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  wabs*TBabs*constant(pegpwrlw + gaussian + gaussian + gaussian + gaussian)
+         0.0536     -0.001          0          0     100000      1e+06
+         0.0576     -0.001          0          0     100000      1e+06
+       0.414334       0.01          0          0      1e+10      1e+10
+        2.57475      -0.01         -3         -2          9         10
+            0.2      -0.01       -100       -100      1e+10      1e+10
+             10      -0.01       -100       -100      1e+10      1e+10
+      0.0146008      -0.01          0          0      1e+20      1e+24
+        1.85442     0.0001       1.77       1.77        2.4        2.4
+      0.0200052    -0.0001       0.02       0.02        0.1        0.1
+    1.60708e-07      -0.01          0          0      1e+20      1e+24
+        1.35936       0.05          0          0      1e+06      1e+06
+      0.0954446      -0.05          0          0         10         20
+     1.4569e-06      -0.01          0          0      1e+20      1e+24
+       0.951836       0.05          0          0      1e+06      1e+06
+        0.09142      -0.05          0          0         10         20
+    9.99546e-06      -0.01          0          0      1e+20      1e+24
+       0.623455     0.0001        0.1        0.1        0.8        0.8
+      0.0574115      -0.05          0          0         10         20
+    2.75385e-05      -0.01          0          0      1e+20      1e+24

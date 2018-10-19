@@ -1,0 +1,36 @@
+statistic chi
+data 1:1 E0102spec_src_newgrp.pi
+ignore 1:1,28
+
+method leven 10 0.01
+cd /Users/pavanrh/Documents/UofA_projects/E0102/spec_analysis
+abund file smc_abund.txt
+xsect vern
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  wabs*TBabs*nsmaxg
+         0.0536     -0.001          0          0     100000      1e+06
+       0.620357     0.0001      0.054      0.054     100000      1e+06
+        6.52393       0.01        5.5        5.5        6.9        6.9
+            1.4       -0.1        0.5        0.5          3          3
+             12       -0.1          5          5         30         30
+             62       -0.1       0.01       0.01        100        100
+          12006
+      0.0935577     0.0001          0          0          1          1
+fit 
+cpd /xw 
+setp en 
+pl ldata 
+setp comm we 2abs_nsmaxg12C_data 
+plot 
+setp delete 1
+plot model 
+setp comm we 2abs_nsmaxg12C_mo 
+plot 
+setp delete 1
+plot delchi 
+setp comm we 2abs_nsmaxg12C_resid 
+plot 
+quit 
+y 

@@ -1,0 +1,21 @@
+statistic chi
+data 1:1 E0102spec_src_grp.pi
+ignore 1:1,63
+
+method leven 10 0.01
+abund wilm
+xsect vern
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  TBabs(nsatmos + pegpwrlw)
+       0.396384     0.0001          0          0     100000      1e+06
+        5.81259       0.01          5          5        6.5        6.5
+            1.4     -0.001          1          1          3          3
+             12       -0.1          5          5         30         30
+             62       -0.1        0.1        0.1        100        100
+         234.06       0.01          0          0      1e+20      1e+24
+        3.19366       0.01         -3         -2          9         10
+            0.3      -0.01       -100       -100      1e+10      1e+10
+             10      -0.01       -100       -100      1e+10      1e+10
+      0.0128104       0.01          0          0      1e+20      1e+24

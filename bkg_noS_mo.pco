@@ -1,0 +1,33 @@
+SKIP SING
+LWIDTH   2.
+COL 1 ON 2
+COL 1 ON 3
+COL 1 ON 4
+COL 1 ON 5
+COL 1 ON 6
+LIne ON    1
+LW   2.0 ON   1
+LIne ON    2
+LS    4 ON   2
+LW   1.0 ON   2
+LIne ON    3
+LS    4 ON   3
+LW   1.0 ON   3
+LIne ON    4
+LS    4 ON   4
+LW   1.0 ON   4
+LIne ON    5
+LS    4 ON   5
+LW   1.0 ON   5
+LIne ON    6
+LS    4 ON   6
+LW   1.0 ON   6
+LOC  0 0 1 1
+LAB  F
+LAB  T  Current Theoretical Model
+LAB  X  Energy (keV)
+LAB  Y  Photons cm\u-2\d s\u-1\d keV\u-1\d
+R    X1 0.3 11
+R    Y   1.22839E-7 0.000125321
+LOG  X ON 1
+LOG  Y ON 1
