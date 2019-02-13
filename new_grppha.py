@@ -107,8 +107,8 @@ def group_pha(indata, ebounds, e_limits, minsize, mincount, frac_bin):
     grouping[0] = 1
 
     channels = ebounds.data['channel']
-    emin = ebounds.data['e_min']
-    emax = ebounds.data['e_max']
+    emin = ebounds.data['e_min']*1000
+    emax = ebounds.data['e_max']*1000
     energy = (emin*emax)**0.5
     ewidth = emax - emin
     min_ewidth = np.zeros(len(indata)) + minsize
